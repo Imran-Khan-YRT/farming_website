@@ -8,7 +8,7 @@ function useDynamicTranslation() {
   useEffect(() => {
     const loadTranslations = async (lang: string) => {
       try {
-        const { default: translation } = await import(`../../../public/${lang}/translation.json`);
+        const { default: translation } = await import(`../../assets/combined/${lang}/translation.json`);
         i18n.addResourceBundle(lang, "translation", translation, true, true);
         setT(() => i18n.getFixedT(lang, "translation"));
       } catch (error) {
