@@ -1,12 +1,14 @@
 import React from "react";
 import "./App.css";
-import useDynamicTranslation from "./util/customHook/dynamicTranslation";
+import useDynamicTranslation from "./utils/customHook/dynamicTranslation";
+import { Box, Typography } from "@mui/material";
+import Header from "./components/Header/Header";
 
 function App() {
   const t = useDynamicTranslation();
   return (
     <div>
-      <h1>{t("greeting")}</h1>
+      <Header />
     </div>
   );
 }

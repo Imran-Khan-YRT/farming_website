@@ -1,3 +1,26 @@
 {
-    "greeting": "Bonjour"
+    "greeting": "Hello-FR",
+    "navbar": {
+        "menu": {
+            "home": "Home-FR",
+            "appFeatures": "App Features-FR",
+            "microFinance": "Microfinance-FR",
+            "contactUs": "Contact Us-FR"
+        },
+        "button": {
+            "downloadSignUp": "Download/Sign Up-FR"
+        }
+    },
+    "home": {
+        "overview": {
+            "title": "MIMODZI Overview",
+            "content": "Welcome to Mimodzi, your innovative farming application, the ultimate digital partner for modern farmers. Harness the power of Artificial Intelligence (AI) for precision farming at your fingertips.",
+            "button": {
+                "ourProducts": "Our Products",
+                "learnMore": "Learn more",
+                "projectDone": "Project Done",
+                "teamMembers": "Team Members"
+            }
+        }
+    }
 }

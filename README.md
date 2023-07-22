@@ -21,3 +21,7 @@
 `npm install --save-dev @babel/plugin-proposal-private-property-in-object`
 
 # changed es5 to es6 in tsconfig.json -Forgot why???
+
+# install mui libray --installed default . Need to know what styled componet differs from it
+
+`npm install @mui/material @emotion/react @emotion/styled`
