@@ -1,10 +1,13 @@
-import { AppBar, Box, Link, Button, Toolbar, Typography } from "@mui/material";
+import { AppBar, Box, Link, Toolbar, Typography } from "@mui/material";
 import app_logo from "../../assets/Home/app_logo.png";
 import useDynamicTranslation from "../../utils/customHook/dynamicTranslation";
 import { headerData, downloadBtn } from "./headerData";
 import "./header.css";
+import Button from "../commonComponent/Button/Button";
 
 const Header = () => {
+  // handle click later
+  const handleClick = () => {};
   const t = useDynamicTranslation();
   return (
     <AppBar>
@@ -18,9 +21,7 @@ const Header = () => {
               <Typography variant="body1">{t(data)}</Typography>
             </Link>
           ))}
-          <Button className="header_btn" variant="contained">
-            {t(downloadBtn)}
-          </Button>
+          <Button children={t(downloadBtn)} onClick={handleClick}></Button>
         </Box>
       </Toolbar>
     </AppBar>

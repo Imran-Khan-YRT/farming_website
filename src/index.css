@@ -2,13 +2,3 @@
   margin: 0;
   padding: 0;
 }
-
-.header_btn {
-  background-color: #8ac43f;
-  color: #ffffff;
-  height: 2.5rem;
-}
-
-.header_btn:hover {
-  background-color: #006738;
-}
