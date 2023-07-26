@@ -6,15 +6,15 @@ interface CustomButtonProps {
   children: React.ReactNode;
   className?: string;
   onClick?: () => void;
-  backgroundColor?: string;
-  color?: string;
-  height?: string;
-  padding?: string;
+  backgroundColor?: CSSProperties["backgroundColor"];
+  color?: CSSProperties["color"];
+  height?: CSSProperties["height"];
+  padding?: CSSProperties["padding"];
+  onHoverBackgroundColor?: CSSProperties["backgroundColor"];
   style?: CSSProperties;
-  onHoverBackgroundColor?: string;
 }
 
-const CustomButton: React.FC<CustomButtonProps> = ({ children, onClick, backgroundColor = "#8ac43f", color = "#ffffff", onHoverBackgroundColor = "#006738", style = {} }) => {
+const CustomButton: React.FC<CustomButtonProps> = ({ children, onClick, backgroundColor = "#8ac43f", color = "#ffffff", onHoverBackgroundColor = "#006738", height, style = {} }) => {
   const CustomButton = styled(Button)({
     backgroundColor: backgroundColor,
     color: color,
@@ -23,7 +23,6 @@ const CustomButton: React.FC<CustomButtonProps> = ({ children, onClick, backgrou
     border: "none",
     borderRadius: "4px",
     cursor: "pointer",
-    transition: "background-color 0.3s",
     "&:hover": {
       backgroundColor: onHoverBackgroundColor,
     },
