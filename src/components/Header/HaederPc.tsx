@@ -15,9 +15,11 @@ const HaederPc = () => {
   const t = useDynamicTranslation();
   console.log(headerData);
   return (
-    <FlexContainer border="1px solid gray" paddingInline="1rem" style={{ position: "sticky", zIndex: "1000" }}>
+    <FlexContainer border="1px solid gray" paddingInline="2rem" style={{ position: "sticky", zIndex: "1000" }}>
       <FlexContainer width="100%" paddingBlock="10px">
-        <Image src={app_logo} alt="App Logo" />
+        <Link to="/">
+          <Image src={app_logo} alt="App Logo" />
+        </Link>
         <FlexContainer gap="2rem">
           {headerData.map((data) => (
             <Link to={data} key={data}>

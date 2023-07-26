@@ -17,8 +17,8 @@ const useResponsive = (): Responsive => {
     const width = window.innerWidth;
     setResponsive({
       isMobile: width <= 550,
-      isTablet: width > 550 && width <= 750,
-      isPC: width > 750,
+      isTablet: width > 550 && width <= 768,
+      isPC: width > 768,
     });
   };
 
