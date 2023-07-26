@@ -1,7 +1,7 @@
 import { AppBar, Box, Link, Toolbar, Typography } from "@mui/material";
 import app_logo from "../../assets/Home/app_logo.png";
 import useDynamicTranslation from "../../utils/customHook/dynamicTranslation";
-import { headerData, downloadBtn } from "./headerData";
+import { headerData } from "./headerData";
 import "./header.css";
 import Button from "../commonComponent/Button/Button";
 
@@ -21,7 +21,7 @@ const Header = () => {
               <Typography variant="body1">{t(data)}</Typography>
             </Link>
           ))}
-          <Button children={t(downloadBtn)} onClick={handleClick}></Button>
+          <Button children={t("navbar.button.downloadSignUp")} onClick={handleClick}></Button>
         </Box>
       </Toolbar>
     </AppBar>
