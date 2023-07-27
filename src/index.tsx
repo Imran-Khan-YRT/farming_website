@@ -9,13 +9,13 @@ const root = ReactDOM.createRoot(document.getElementById("root") as HTMLElement)
 root.render(
   <React.StrictMode>
     <BrowserRouter>
-      {/* Suspense to load the translation file */}
-      <Suspense fallback="Loading...">
-        <ThemeProvider>
+      <ThemeProvider>
+        {/* Suspense to load the translation file */}
+        <Suspense fallback="Loading...">
           <App />
           <GetRoutes />
-        </ThemeProvider>
-      </Suspense>
+        </Suspense>
+      </ThemeProvider>
     </BrowserRouter>
   </React.StrictMode>
 );

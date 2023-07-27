@@ -7,6 +7,7 @@ import FlexContainer from "../commonComponent/FlexContainer/FlexContainer";
 import Link from "../commonComponent/Link/Link";
 import data from "../../assets/combined/en/translation.json";
 import Image from "../commonComponent/Image/Image";
+import { header_container, header_data_container, header_item_container } from "./headerStyle";
 
 const HaederPc = () => {
   // handle click later
@@ -15,12 +16,12 @@ const HaederPc = () => {
   const t = useDynamicTranslation();
   console.log(headerData);
   return (
-    <FlexContainer border="1px solid gray" paddingInline="2rem" style={{ position: "sticky", zIndex: "1000" }}>
-      <FlexContainer width="100%" paddingBlock="10px">
+    <FlexContainer style={header_container}>
+      <FlexContainer style={header_item_container}>
         <Link to="/">
           <Image src={app_logo} alt="App Logo" />
         </Link>
-        <FlexContainer gap="2rem">
+        <FlexContainer style={header_data_container}>
           {headerData.map((data) => (
             <Link to={data} key={data}>
               <Typography variant="body1">{t(`navbar.menu.${data}`)}</Typography>
