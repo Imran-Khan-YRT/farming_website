@@ -3,11 +3,9 @@ import { app_logo } from "../../assets/Home";
 import useDynamicTranslation from "../../utils/customHook/dynamicTranslation";
 import Button from "../commonComponent/Button/Button";
 import FlexContainer from "../commonComponent/FlexContainer/FlexContainer";
-// import { Link } from "react-router-dom";
 import Link from "../commonComponent/Link/Link";
 import data from "../../assets/combined/en/translation.json";
-import Image from "../commonComponent/Image/Image";
-import { header_container, header_data_container, header_item_container } from "./headerStyle";
+import { header_container, header_data_container, header_item_container, header_logo } from "./headerStyle";
 
 const HaederPc = () => {
   // handle click later
@@ -19,7 +17,7 @@ const HaederPc = () => {
     <FlexContainer style={header_container}>
       <FlexContainer style={header_item_container}>
         <Link to="/">
-          <Image src={app_logo} alt="App Logo" />
+          <img src={app_logo} alt="App Logo" style={header_logo} />
         </Link>
         <FlexContainer style={header_data_container}>
           {headerData.map((data) => (
