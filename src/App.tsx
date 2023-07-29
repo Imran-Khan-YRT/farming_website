@@ -1,11 +1,15 @@
 import "./App.css";
+import Footer from "./components/Footer/Footer";
 import Header from "./components/Header/Header";
+import GetRoutes from "./utils/Route";
 
 function App() {
   return (
-    <div>
+    <>
       <Header />
-    </div>
+      <GetRoutes />
+      <Footer />
+    </>
   );
 }
 

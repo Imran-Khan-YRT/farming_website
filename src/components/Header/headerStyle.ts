@@ -12,6 +12,7 @@ export const header_item_container: CSSProperties = {
   alignItems: "center",
   width: "100%",
   paddingBlock: "10px",
+  margin: "0px",
 };
 
 export const header_data_container: CSSProperties = {
