@@ -27,7 +27,7 @@ const FooterPC = () => {
         <img src={app_logo} alt="App Logo" width={60} height={60} />
         <FlexContainer style={containerStyle}>{items}</FlexContainer>
       </FlexContainer>
-      <FlexContainer style={{ justifyContent: "space-between", flexWrap: "wrap", padding: "3rem", alignContent: "center" }}>
+      <FlexContainer style={{ justifyContent: "space-between", flexWrap: "wrap", padding: "3rem", alignItems: "center" }}>
         <FlexContainer style={{ gap: "15px" }}>
           {footerIcons.map((val) => (
             <img src={val} alt="val" width="25px" height="25px" />
@@ -56,12 +56,12 @@ const FooterMobile = () => {
   ));
   return (
     <PageContainer title={""} margin="0rem" padding="0rem">
-      <FlexContainer flexDirection="column" style={{ alignItems: "center", padding: "3rem", justifyContent: "space-between" }}>
-        <img src={app_logo} alt="App Logo" width={50} height={50} />
+      <FlexContainer flexDirection="column" style={{ alignItems: "center", padding: "4rem", justifyContent: "space-between", gap: "1rem" }}>
+        <img src={app_logo} alt="App Logo" width={60} height={60} />
         <FlexContainer flexDirection="column">{items}</FlexContainer>
       </FlexContainer>
-      <FlexContainer flexDirection="column" style={{ justifyContent: "space-between", flexWrap: "wrap", padding: "2rem", gap: "2rem", alignItems: "center" }}>
-        <FlexContainer style={{ gap: "10px" }}>
+      <FlexContainer flexDirection="column" style={{ justifyContent: "space-between", flexWrap: "wrap", padding: "3rem", gap: "3rem", alignItems: "center" }}>
+        <FlexContainer style={{ gap: "15px" }}>
           {footerIcons.map((val) => (
             <img src={val} alt="val" width="25px" height="25px" />
           ))}
@@ -72,7 +72,6 @@ const FooterMobile = () => {
           ))}
         </FlexContainer>
       </FlexContainer>
-
       <FlexContainer style={{ justifyContent: "space-around", paddingBottom: "20px" }}>
         <Typography variant="h6">Privacy Policy | Terms & Condition | Site Map</Typography>
         <Typography variant="h6">2023. All Rights Reserved MIMODZI.com </Typography>
