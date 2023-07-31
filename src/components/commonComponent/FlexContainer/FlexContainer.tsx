@@ -9,12 +9,11 @@ interface FlexProps {
   style?: CSSProperties;
 }
 
-const FlexContainer: React.FC<FlexProps> = ({ children, display = "flex", flexDirection = "row", style = {}, margin, paddingInline }) => {
+const FlexContainer: React.FC<FlexProps> = ({ children, display = "flex", flexDirection = "row", style = {}, margin }) => {
   style = {
     display: display,
     flexDirection: flexDirection,
     margin: margin,
-    paddingInline: paddingInline,
     ...style,
   };
   return <div style={style}>{children}</div>;

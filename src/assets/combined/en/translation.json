@@ -45,26 +45,28 @@
         },
         "apply_for_loan": {
             "title": "How To Apply for Loan",
-            "step1": {
-                "title": "Apply For Loan",
-                "description": "Here you can click on Apply for Loan and the next screen open in which you will fill the form"
-            },
-            "step2": {
-                "title": "Fill the Loan Application Form",
-                "description": "In this stage You will Provide you Personal information and you crop Information "
-            },
-            "step3": {
-                "title": "AI Based Loan Suggestion ",
-                "description": "Here You can see the AI Based Loan Suggestion according to your best feasibility"
-            },
-            "step4": {
-                "title": "Select Plan",
-                "description": "Select Plan"
-            },
-            "step5": {
-                "title": "Wait For Approval",
-                "description": "After that your application submit to our company and the company will contact you soon"
-            }
+            "step": [
+                {
+                    "title": "Apply For Loan",
+                    "description": "Here you can click on Apply for Loan and the next screen open in which you will fill the form"
+                },
+                {
+                    "title": "Fill the Loan Application Form",
+                    "description": "In this stage You will Provide you Personal information and you crop Information "
+                },
+                {
+                    "title": "AI Based Loan Suggestion ",
+                    "description": "Here You can see the AI Based Loan Suggestion according to your best feasibility"
+                },
+                {
+                    "title": "Select Plan",
+                    "description": "In this Stage you can  Select the Loan Plan which is Suitable for you."
+                },
+                {
+                    "title": "Wait For Approval",
+                    "description": "After that your application submit to our company and the company will contact you soon"
+                }
+            ]
         }
     }
 }

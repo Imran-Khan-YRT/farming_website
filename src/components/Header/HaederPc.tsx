@@ -1,5 +1,5 @@
 import { Typography } from "@mui/material";
-import { app_logo } from "../../assets/Home";
+import { app_logo } from "../../assets";
 import useDynamicTranslation from "../../utils/customHook/dynamicTranslation";
 import Button from "../commonComponent/Button/Button";
 import FlexContainer from "../commonComponent/FlexContainer/FlexContainer";

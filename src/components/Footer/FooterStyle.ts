@@ -9,13 +9,10 @@ export const wholeContainer = {
 export const containerStyle = {
   display: "grid",
   justifyContent: "space-between",
-  width: "100%",
+  width: "70%",
   gridTemplateColumns: `repeat(3, 1fr)`,
   gridGap: "10px",
   padding: "20px",
-  " @media (max-width: 768px)": {
-    gridTemplateColumns: "1fr", // Change to one column for mobile screens
-  },
 };
 
 export const itemStyle: CSSProperties = {
